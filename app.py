@@ -11,6 +11,10 @@ from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
 
 # Initialize NLTK resources
+nltk.download('omw-1.4')
+nltk.download('wordnet') 
+nltk.download('wordnet2022')
+nltk.download('punkt')
 nltk.download('stopwords')
 stop_words = set(stopwords.words("english"))  # Create a set of English stopwords
 lemmatizer = WordNetLemmatizer()  # Initialize the WordNet Lemmatizer
