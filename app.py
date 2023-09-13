@@ -3,6 +3,7 @@ import joblib
 import numpy as np
 from sklearn.feature_extraction.text import TfidfVectorizer
 # Import necessary libraries
+import nltk
 import re
 from urllib.parse import urlparse
 from nltk.tokenize import word_tokenize
@@ -10,6 +11,7 @@ from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
 
 # Initialize NLTK resources
+nltk.download('stopwords')
 stop_words = set(stopwords.words("english"))  # Create a set of English stopwords
 lemmatizer = WordNetLemmatizer()  # Initialize the WordNet Lemmatizer
 
